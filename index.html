@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hani Abdikadir Ahmed | Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+    line-height:1.6;
+}
+
+/* Navigation */
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:#111827;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    z-index:1000;
+}
+
+.logo{
+    
+    display:flex;
+    align-items:center;
+}
+
+.logo img{
+    height:60px;
+    width:auto;
+    object-fit:contain;
+}
+
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#38bdf8;
+}
+
+/* Hero */
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:100px 20px;
+}
+
+.hero-content h1{
+    font-size:55px;
+    margin-bottom:10px;
+}
+
+.hero-content h2{
+    color:#38bdf8;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    max-width:700px;
+    margin:auto;
+    color:#cbd5e1;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:12px 30px;
+    background:#38bdf8;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#0284c7;
+}
+
+/* Sections */
+section{
+    padding:80px 10%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:40px;
+    color:#38bdf8;
+}
+
+/* About */
+.about{
+    text-align:center;
+    max-width:900px;
+    margin:auto;
+}
+
+/* Skills */
+.skills-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.skill{
+    background:#1e293b;
+    padding:20px;
+    text-align:center;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.skill:hover{
+    transform:translateY(-5px);
+}
+
+/* Projects */
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.project{
+    background:#1e293b;
+    padding:25px;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.project:hover{
+    transform:translateY(-5px);
+}
+
+.project h3{
+    margin-bottom:15px;
+    color:#38bdf8;
+}
+
+/* Contact */
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin:10px 0;
+}
+
+.socials{
+    margin-top:20px;
+}
+
+.socials a{
+    color:#38bdf8;
+    margin:0 10px;
+    text-decoration:none;
+    font-size:18px;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#111827;
+    color:#94a3b8;
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+    font-size:38px;
+}
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    margin-top:15px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">
+    <img src="hani.png" alt="Hani Logo">
+</div>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<!-- Hero -->
+<section class="hero" id="home">
+<div class="hero-content">
+<h1>Hani Abdikadir Ahmed</h1>
+<h2>Computer Science Graduate</h2>
+
+<p>
+Passionate about web development, technology, and solving real-world problems through software.
+Currently seeking opportunities as a Frontend Developer, Web Developer, IT Support Specialist, or Graduate Trainee.
+</p>
+
+<a href="cv.pdf" class="btn" download>
+Download CV
+</a>
+</div>
+</section>
+
+<!-- About -->
+<section id="about">
+
+<h2 class="section-title">About Me</h2>
+
+<div class="about">
+<p>
+ I recently graduated with a Bachelor's Degree in Computer Science and am currently looking for an entry-level opportunity, internship, or graduate trainee program where I can apply my skills and continue learning.
+
+During my studies, I gained knowledge in programming, web development, databases, and software development fundamentals. I am eager to gain hands-on experience, work with experienced professionals, and contribute to meaningful projects.
+
+I am particularly interested in opportunities related to technology, software development, web development, and IT.
+</p>
+</div>
+
+</section>
+
+<!-- Skills -->
+<section id="skills">
+
+<h2 class="section-title">Skills</h2>
+
+<div class="skills-container">
+
+<div class="skill">HTML5</div>
+<div class="skill">CSS3</div>
+<div class="skill">JavaScript</div>
+<div class="skill">Git & GitHub</div>
+<div class="skill">WordPress</div>
+<div class="skill">Responsive Design</div>
+<div class="skill">Microsoft Excel</div>
+<div class="skill">Problem Solving</div>
+
+</div>
+
+</section>
+
+<!-- Projects -->
+<section id="projects">
+
+<h2 class="section-title">Projects</h2>
+
+<div class="projects">
+
+<div class="project">
+<h3>Portfolio Website</h3>
+<p>
+Personal portfolio built using HTML, CSS and JavaScript.
+</p>
+</div>
+
+<div class="project">
+<h3>To-Do App</h3>
+<p>
+Task management application with local storage support.
+</p>
+</div>
+
+<div class="project">
+<h3>Weather App</h3>
+<p>
+Weather forecast application using flutter
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- Contact -->
+<section id="contact">
+
+<h2 class="section-title">Contact Me</h2>
+
+<div class="contact">
+
+<p>📧 Email: hannaaq26@gmail.com</p>
+
+<p>📱 Phone: +252 +252907652116</p>
+
+<div class="socials">
+
+<a href="https://www.linkedin.com/in/hanna-a-q-764418416" target="_blank">LinkedIn</a>
+
+<a href="https://github.com/fadumohanniabdi-code/hani">GitHub</a>
+
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Hani Abdikadir Ahmed. All Rights Reserved.
+</footer>
+
+<script>
+
+// Highlight active menu item
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll("nav ul li a");
+
+window.addEventListener("scroll", () => {
+
+let current = "";
+
+sections.forEach(section => {
+
+const sectionTop = section.offsetTop;
+
+if(pageYOffset >= sectionTop - 200){
+current = section.getAttribute("id");
+}
+
+});
+
+navLinks.forEach(link => {
+link.classList.remove("active");
+
+if(link.getAttribute("href").includes(current)){
+link.classList.add("active");
+}
+});
+
+});
+
+</script>
+
+</body>
+</html>
